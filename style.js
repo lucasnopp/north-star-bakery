@@ -69,24 +69,23 @@ if (video && audio) {
     });
 
 
-    // Keep the audio synchronized when the video is moved
+    // Keep audio synchronized when the visitor moves through the video
     video.addEventListener("seeked", () => {
         audio.currentTime = video.currentTime;
     });
 
-
-    // Loop the video and audio together
-    video.addEventListener("ended", () => {
-        video.currentTime = 0;
-        audio.currentTime = 0;
-
-        video.play().catch(() => {
-            console.log("Video playback was blocked by the browser.");
-        });
-
-        audio.play().catch(() => {
-            console.log("Audio playback was blocked by the browser.");
-        });
+    // Keep audio and video synchronized while playing
+    video.addEventListener("timeupdate", () => {
+        if (Math.abs(audio.currentTime - video.currentTime) > 0.3) {
+            audio.currentTime = video.currentTime;
+        }
     });
-}
+
+    // Restart both when the video finishes
+    video.addEventListener("ended", () => {
+        audio.pause();
+        audio.currentTime = 0;
+        video.currentTime = 0;
+    });
+}   
 });
