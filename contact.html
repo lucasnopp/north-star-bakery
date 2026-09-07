@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/bakery-logo_c.png" alt="North Star Bakery Logo">
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="products.html">Our Products</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact & Pre-Orders</a>
+        </nav>
+        <h1>Contact & Pre-Order Requests</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Inquiry & Pre-Order Form</h2>
+            <p>Planning an event or want to guarantee your favorite loaf? Fill out our form below. Please note that all pre-orders require at least <strong>48 hours notice</strong>. Payment is handled at pickup.</p>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div class="form-group">
+                        <label for="client-name">Full Name:</label>
+                        <input type="text" id="client-name" name="client-name" required placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="client-email">Email Address:</label>
+                        <input type="email" id="client-email" name="client-email" required placeholder="jane@example.com">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Details</legend>
+                    <div class="form-group">
+                        <label for="pickup-date">Requested Pickup Date:</label>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="request-type">Request Type:</label>
+                        <select id="request-type" name="request-type" required>
+                            <option value="">-- Please select an option --</option>
+                            <option value="pre-order">Pre-Order Items</option>
+                            <option value="event-planning">Event Planner Inquiry</option>
+                            <option value="general-question">General Question</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-details">Item Details & Quantities:</label>
+                        <textarea id="order-details" name="order-details" rows="6" placeholder="Example: 2 Signature Loaves, 1 dozen Croissants..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="allergies">Allergy Notes (If applicable):</label>
+                        <textarea id="allergies" name="allergies" rows="3" placeholder="Please let us know about any nut, dairy, or gluten sensitivities..."></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Visit Our Neighborhood Location</h2>
+            <p><strong>Address:</strong> 123 Main Street, Your Town</p>
+            <p><strong>Hours of Operation:</strong></p>
+            <ul>
+                <li>Monday: Closed (Baking team resting!)</li>
+                <li>Tuesday – Sunday: 6:00 AM – 6:00 PM</li>
+            </ul>
+            <p><em>Note: Commuters can stop by our walk-up window facing the station platform starting at 5:30 AM for drip coffee and select pastries!</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery. Warm, handmade, and community centered.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
