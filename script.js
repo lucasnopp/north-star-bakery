@@ -46,46 +46,4 @@ if (preorderForm) {
     });
 }
 
-
-// 3. BAKERY VIDEO & AUDIO SYNCHRONIZATION
-const video = document.getElementById("bakeryVideo");
-const audio = document.getElementById("bakeryAudio");
-
-if (video && audio) {
-
-    // Start the audio when the video starts
-    video.addEventListener("play", () => {
-        audio.currentTime = video.currentTime;
-
-        audio.play().catch(() => {
-            console.log("Audio playback was blocked by the browser.");
-        });
     });
-
-
-    // Pause the audio when the video is paused
-    video.addEventListener("pause", () => {
-        audio.pause();
-    });
-
-
-    // Keep audio synchronized when the visitor moves through the video
-    video.addEventListener("seeked", () => {
-        audio.currentTime = video.currentTime;
-    });
-
-    // Keep audio and video synchronized while playing
-    video.addEventListener("timeupdate", () => {
-        if (Math.abs(audio.currentTime - video.currentTime) > 0.3) {
-            audio.currentTime = video.currentTime;
-        }
-    });
-
-    // Restart both when the video finishes
-    video.addEventListener("ended", () => {
-        audio.pause();
-        audio.currentTime = 0;
-        video.currentTime = 0;
-    });
-}   
-});
