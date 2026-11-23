@@ -6,7 +6,7 @@
     --color-od-green: #4b5320;   /* Brand Theme: Main Canvas Background */
     --color-section-bg: #373d17; /* Contrast Layer: Desaturated darker OD green for readability blocks */
     --color-text-pure: #ffffff;  /* Primary Text: High-contrast white */
-     --color-yellow: #FFD700;     /* Accessibility: Keyboard Focus Indicator */
+    --color-yellow: #FFD700;     /* Accessibility: Keyboard Focus Indicator */
    
     --font-heading: 'Georgia', serif;
     --font-body: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
