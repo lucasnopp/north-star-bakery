@@ -3,9 +3,9 @@
    ========================================================================== */
 :root {
     --color-navy: #002060;       /* Primary Accents: Headers, Footers & Dominant Branded Elements */
-    --color-od-green: #4b5320;   /* Brand Theme: Main Canvas Background */
-    --color-section-bg: #373d17; /* Contrast Layer: Desaturated darker OD green for readability blocks */
-    --color-text-pure: #ffffff;  /* Primary Text: High-contrast white */
+    --color-od-green: #4B5320;   /* Brand Theme: Main Canvas Background */
+    --color-section-bg: #373D17; /* Contrast Layer: Desaturated darker OD green for readability blocks */
+    --color-text-pure: #FFFFFF;  /* Primary Text: High-contrast white */
     --color-yellow: #FFD700;     /* Accessibility: Keyboard Focus Indicator */
    
     --font-heading: 'Georgia', serif;
@@ -86,7 +86,7 @@ section {
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 6px;
-    border: 1px solid #555d24;
+    border: 1px solid #555D24;
 }
 
 h2 {
