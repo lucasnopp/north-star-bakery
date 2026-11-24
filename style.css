@@ -53,6 +53,11 @@ header h1 {
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    aliogn-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin-bottom: 0.5rem;
 }
 
