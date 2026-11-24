@@ -2,7 +2,7 @@
    1. DESIGN CORE & CONSTANTS (Colors & Typography Rule)
    ========================================================================== */
 :root {
-    --color-navy: #002060;       /* Primary Accents: Headers & Dominant Branded Elements */
+    --color-navy: #002060;       /* Primary Accents: Headers, Footers & Dominant Branded Elements */
     --color-od-green: #4b5320;   /* Brand Theme: Main Canvas Background */
     --color-section-bg: #373d17; /* Contrast Layer: Desaturated darker OD green for readability blocks */
     --color-text-pure: #ffffff;  /* Primary Text: High-contrast white */
