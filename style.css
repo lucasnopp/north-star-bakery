@@ -190,7 +190,7 @@ textarea {
     border-radius: 4px;
     font-family: var(--font-body);
     font-size: 1rem;
-    background-color: #262b10;
+    background-color: #262B10;
     color: var(--color-text-pure);
 }
 
@@ -219,9 +219,13 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #e2e8f0;
+    background-color: #E2E8F0;
 }
 
+button[type="submit"]:focus {
+    outline: 3px solid #FF0000;
+    outline-offset: 3px;
+}
 /* ==========================================================================
    7. GLOBAL FOOTER & MEDIA QUERIES
    ========================================================================== */
