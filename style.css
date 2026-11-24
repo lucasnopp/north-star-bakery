@@ -223,8 +223,8 @@ button[type="submit"]:hover {
 }
 
 button[type="submit"]:focus-visible {
-    outline: 3px solid #CE2029;
-    outline-offset: 0px;
+    outline: 3px solid var(--color-yellow);
+    outline-offset: 3px;
 }
 /* ==========================================================================
    7. GLOBAL FOOTER & MEDIA QUERIES
