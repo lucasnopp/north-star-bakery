@@ -222,7 +222,7 @@ button[type="submit"]:hover {
     background-color: #E2E8F0;
 }
 
-button[type="submit"]:focus {
+button[type="submit"]:focus-visible {
     outline: 3px solid #FF0000;
     outline-offset: 3px;
 }
